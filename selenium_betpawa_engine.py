@@ -22,7 +22,8 @@ options.add_argument('--enable-javascript')
 dr = webdriver.Chrome(options=options)
 #https://www.betpawa.co.ke/upcoming?marketId=OU&categoryId=2
 
-dr.get("https://www.betpawa.co.ke/upcoming?marketId=OU&categoryId=2")
+dr.get("https://www.ke.sportpesa.com/en/sports-betting/football-1/")
+#https://www.betpawa.co.ke/upcoming?marketId=OU&categoryId=2")
 # Website used for scraping
 dr.implicitly_wait(20)
 elements = dr.find_elements(By.XPATH, "//*")
