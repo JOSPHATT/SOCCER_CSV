@@ -40,6 +40,6 @@ dr.quit()
 def upcoming_games():
     return Upcoming_Games
 
-if __name__ == '__upcoming_games__':
-   upcoming_games()
+#if __name__ == '__upcoming_games__':
+ #  upcoming_games()
 
