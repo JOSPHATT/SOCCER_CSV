@@ -88,11 +88,11 @@ for i in game_vals:
 Df=pd.DataFrame(List_of_dictionaries)
 
 # if file does not exist write header
-if not os.path.isfile('/content/drive/MyDrive/2024/soccer_over_under_odds.csv'):
-    Df.to_csv('/content/drive/MyDrive/2024/soccer_over_under_odds.csv', header='column_names')
+if not os.path.isfile('soccer_over_under_odds.csv'):
+    Df.to_csv('soccer_over_under_odds.csv', header='column_names')
 else:
 # else it exists so append without writing the header
-    Df.to_csv('/content/drive/MyDrive/2024/soccer_over_under_odds.csv', mode='a', header=False)
+    Df.to_csv('soccer_over_under_odds.csv', mode='a', header=False)
 #df=pd.read_csv("/content/drive/MyDrive/2024/soccer_over_under_odds.csv")
-df = pd.read_csv('/content/drive/MyDrive/2024/soccer_over_under_odds.csv').drop_duplicates(keep='first')
+df = pd.read_csv('soccer_over_under_odds.csv').drop_duplicates(keep='first')
 df
