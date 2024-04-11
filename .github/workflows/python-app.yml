@@ -31,6 +31,6 @@ jobs:
       run: |
         python selenium_betpawa_engine.py
         
-    - name: run selenium engine file
+    - name: run csv_appendresults file
       run: |
-        python selenium_betpawa_engine.py
+        python selenium_betpawa_csv_appendresults.py
