@@ -1,7 +1,7 @@
 import selenium_betpawa_engine
 
 Upcoming_Games=selenium_betpawa_engine.upcoming_games()
-print(Upcoming_Games)
+#print(Upcoming_Games)
 import csv
 import pandas as pd
 from itertools import pairwise
@@ -86,7 +86,9 @@ for i in game_vals:
 #print(List_of_dictionaries)
 
 Df=pd.DataFrame(List_of_dictionaries)
+print(Df)
 
+"""
 # if file does not exist write header
 if not os.path.isfile('soccer_over_under_odds.csv'):
     Df.to_csv('soccer_over_under_odds.csv', header='column_names')
@@ -95,4 +97,4 @@ else:
     Df.to_csv('soccer_over_under_odds.csv', mode='a', header=False)
 #df=pd.read_csv("/content/drive/MyDrive/2024/soccer_over_under_odds.csv")
 df = pd.read_csv('soccer_over_under_odds.csv').drop_duplicates(keep='first')
-df
+"""
