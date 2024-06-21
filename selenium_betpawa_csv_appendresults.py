@@ -84,9 +84,10 @@ for i in game_vals:
         d[odd[0]]=odd[1]
     List_of_dictionaries.append(d)
 #print(List_of_dictionaries)
+print(List_of_dictionaries)
 
-Df=pd.DataFrame(List_of_dictionaries)
-print(Df)
+"""Df=pd.DataFrame(List_of_dictionaries)
+print(Df)"""
 
 """
 # if file does not exist write header
